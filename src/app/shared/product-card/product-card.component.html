@@ -1,0 +1,11 @@
+<div class="vintage-bg vintage-text border vintage-border rounded-lg shadow-md overflow-hidden max-w-sm mx-auto">
+    <img [src]="'assets/images/' + product.imagen" [alt]="product.nombre" class="w-full h-48 object-cover">
+    <div class="p-4">
+        <h2 class="vintage-heading text-lg mb-2">{{ product.nombre }}</h2>
+        <p class="vintage-body text-sm text-[var(--vintage-gris)] mb-2">{{ product.descripcion }}</p>
+        <p class="font-bold text-[var(--rojo)] mb-2">${{ product.precio | number }}</p>
+        <span *ngIf="product.destacado" class="inline-block bg-[var(--vintage-dorado)] text-[var(--vintage-dark)] px2 py-1 rounded text-xs font-semibold">
+            Destacado
+        </span>
+    </div>
+</div>

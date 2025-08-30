@@ -1,0 +1,18 @@
+<section id="products" class="py-16 px-6 vintage-bg">
+    <h2 class="vintage-heading text-3xl text-center mb-12">Productos Destacados</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <app-product-card 
+            *ngFor="let prod of products" 
+            [product]="prod"
+            (click)="openModal(prod)">
+        </app-product-card>
+    </div>
+
+    <!-- Modal -->
+    <app-product-modal 
+        [product]="selectedProduct" 
+        [visible]="modalVisible" 
+        (close)="closeModal()">
+    </app-product-modal>
+</section>

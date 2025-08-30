@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nombre": "BATERÍA. MF55565- CCA480- 55AH A1 (55548) HG GOLD L.M. (batería 55 amperes)",
+    "tipo": "Baterías",
+    "descripcion": "CCA 480/LARGO 242/ ANCHO 173/ ALTO 190/ ALTO BORNE 190/ A1",
+    "precio": 40990,
+    "imagen": "bateria-55-amperes.jpg",
+    "destacado": true
+  },
+  {
+    "id": 2,
+    "nombre": "BATERÍA. MF105D31L- CCA750 (PT90L) 12V. 90AH A0 HG GOLD L.M.( batería de 90 amperes)",
+    "tipo": "Baterías",
+    "descripcion": "CCA 750/ LARGO 303/ ANCHO 172/ ALTO 200/ ALTO BORNE 220/ A0",
+    "precio": 40990,
+    "imagen": "bateria-90-amperes-izquierdo.jpg",
+    "destacado": true
+  },
+  {
+    "id": 3,
+    "nombre": "BATERÍA. MF105D31R- CCA750- 12V. 90AH A1 (PT-90) HG GOLD L.M. (batería 90 amperes)",
+    "tipo": "Baterías",
+    "descripcion": "CCA 750/ LARGO 303/ ANCHO 176/ ALTO 200/ ALTO BORNE 220/A1",
+    "precio": 40990,
+    "imagen": "bateria-90-amperes-derecho.jpg",
+    "destacado": true
+  }
+]

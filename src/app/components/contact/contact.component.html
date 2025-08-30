@@ -1,0 +1,77 @@
+<section id="contact" class="py-20 text-center bg-[var(--vintage-dark)] text-white">
+    <h2 class="text-3xl font-bold mb-6">📩 Contáctanos</h2>
+    <p class="mb-8">
+        Queremos estar cerca de ti.
+        Escríbenos por el Formulario y te ayudaremos a encontrar lo que necesitas. 🚗✨
+    </p>
+    
+    <!-- Links para contacto 
+    <div>
+        <a href="https://www.instagram.com/tucuenta" target="_blank"
+            class="px-4 py-2 rounded-lg shadow bg-pink-500 hover:bg-pink-600 transition">
+            Instagram
+        </a>
+
+        <a href="https://wa.me/56912345678" target="_blank"
+            class="px-4 py-2 rounded-lg ml-4 shadow bg-[var(--vintage-rojo)] text-white hover:bg-[var(--vintage-dorado)] hover:text-[var(--vintage-dark)] transition">
+            WhatsApp
+        </a>
+    </div> -->
+    
+    <!-- Formulario de contacto -->
+    <form (ngSubmit)="onSubmit()" class="max-w-xl mx-auto text-left bg-white text-black p-8 rounded-2xl shadow space-y-4">
+        <div>
+            <label for="name" class="block mb-2 font-medium">Nombre</label>
+            <input id="name" type="text" [(ngModel)]="formData.name" name="name"
+                    required
+                    class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--vintage-rojo)]" />
+        </div>
+        <div>
+            <label for="email" class="block mb-2 font-medium">Email</label>
+            <input id="email" type="email" [(ngModel)]="formData.email" name="email"
+                    required
+                    class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--vintage-rojo)]" />
+        </div>
+        <div>
+            <label for="message" class="block mb-2 font-medium">Mensaje</label>
+            <textarea id="message" rows="4" [(ngModel)]="formData.message" name="message"
+                        required
+                        class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--vintage-rojo)]"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-[var(--vintage-rojo)] text-white px-6 py-3 rounded-lg shadow hover:bg-[var(--vintage-dorado)] hover:text-[var(--vintage-dark)] transition">
+        Enviar
+        </button>
+
+    </form>
+
+    <!-- Notificación -->
+    <div *ngIf="showNotification"
+            class="fixed inset-0 flex justify-center items-center 
+            bg-black/30 backdrop-blur-md z-50">
+        <div
+            class="bg-[var(--vintage-bg)] px-8 py-6 rounded-2xl shadow-2xl text-center border-4 transition transform scale-95"
+            [ngClass]="[
+                notificationAnimation,
+                notificationType === 'success' 
+            ? 'border-[var(--vintage-dorado)]' 
+            : 'border-[var(--vintage-rojo)]']">
+
+            <!-- Mensaje -->
+            <p class="text-2xl font-bold vintage-heading mb-2"
+                [ngClass]="notificationType === 'success'
+                ? 'text-[var(--vintage-dorado)]'
+                : 'text-[var(--vintage-rojo)]'">
+                {{ notificationMessage }}
+            </p>
+
+            <!-- Botón Cerrar -->
+            <button (click)="closeNotification()"
+                class="mt-4 px-6 py-2 rounded-lg shadow vintage-body
+                        bg-[var(--vintage-rojo)] text-white
+                        hover:bg-[var(--vintage-dorado)] hover:text-[var(--vintage-dark)] transition">
+                Cerrar
+            </button>
+        </div>
+    </div>
+</section>
