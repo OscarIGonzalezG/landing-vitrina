@@ -70,7 +70,7 @@ ng serve
 ```
 
 Abrir en el navegador:  
-👉 [http://localhost:4200](http://localhost:4200)
+👉 [https://oscarigonzalezg.github.io/landing-vitrina/](https://oscarigonzalezg.github.io/landing-vitrina/)
 
 ---
 
