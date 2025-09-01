@@ -53,7 +53,7 @@ src/
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/landing-vitrina.git
+git clone https://github.com/OscarIGonzalezG/landing-vitrina.git
 cd landing-vitrina
 ```
 
