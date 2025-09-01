@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v5
+
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+
+
+    - name: Install dependencies
+      run: npm install
+
+
+    - name: Build Angular app
+      run: npm run build
+
+    - name: Artifact upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: github-pages
+        path: dist/landing-vitrina/browser
+  
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+

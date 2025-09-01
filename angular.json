@@ -35,6 +35,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/landing-vitrina/", 
               "budgets": [
                 {
                   "type": "initial",
