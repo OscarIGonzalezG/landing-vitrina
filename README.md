@@ -70,14 +70,14 @@ ng serve
 ```
 
 Abrir en el navegador:  
-👉 [https://oscarigonzalezg.github.io/landing-vitrina/](https://oscarigonzalezg.github.io/landing-vitrina/)
+👉 [http://localhost:4200](http://localhost:4200)
 
 ---
 
 ## 🌐 Despliegue
 
 El proyecto está desplegado en **GitHub Pages**:  
-👉 [Demo en línea](https://tuusuario.github.io/landing-vitrina/)
+👉 [Demo en línea](https://oscarigonzalezg.github.io/landing-vitrina/)
 
 ---
 
