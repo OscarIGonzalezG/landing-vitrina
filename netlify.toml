@@ -1,6 +1,6 @@
 [build]
   command = "npm run build:netlify"
-  publish = "dist/landing-vitrina"
+  publish = "dist/landing-vitrina/browser"
 
 [[redirects]]
   from = "/*"
